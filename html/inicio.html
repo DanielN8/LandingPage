@@ -1,0 +1,288 @@
+
+    <!-- Video -->
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="./public/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-75">
+            <div class="spacer" style="height: 380px;"></div>
+            <h1 class="display-5 fw-1 mb-3 text-start w-50">SimplyDeals: Tu Destino de Compras Inteligentes</h1>
+            <p class="lead mb-4 text-start">Descubre las mejores ofertas y productos al alcance de un clic</p>            
+            <div class="text-start">
+                <button class="btn btn-light btn-lg me-2" data-bs-toggle="modal" data-bs-target="#registroModal">Regístrate</button>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Modal de Registro -->
+        <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center w-100" id="registroModalLabel">¡Sé el primero en enterarte!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-4">Sé el primero en enterarte del lanzamiento de SimplyDeals y recibe un 10% de descuento en en todas las compras de tu primer mes</p>
+                        <form id="registroForm">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terminos" required>
+                                <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Registrarme</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Carrusel de Marcas -->
+    <div class="brands-slider py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestras Marcas Destacadas</h2>
+            <div class="marquee">
+                <div class="marquee-content">
+                    <div class="marquee-item">
+                        <img src="./public/brands/fritolay.png" alt="Fritolay" height="40">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="./public/brands/loreal.png" alt="Loreal" height="40">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="./public/brands/melo.png" alt="Melo" height="40">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="./public/brands/multimax.png" alt="Multimax" height="40">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="./public/brands/nike.png" alt="Nike" height="40">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="./public/brands/panafoto.png" alt="Panafoto" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Características Principales -->
+    <div class="features py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="bi bi-truck fs-1 text-primary mb-3"></i>
+                        <h4>Envío Gratis</h4>
+                        <p>En pedidos superiores a $50</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
+                        <h4>Compra Segura</h4>
+                        <p>Garantía de devolución</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="bi bi-headset fs-1 text-primary mb-3"></i>
+                        <h4>Soporte 24/7</h4>
+                        <p>Atención personalizada</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card text-center p-4 shadow-sm rounded">
+                        <i class="bi bi-credit-card fs-1 text-primary mb-3"></i>
+                        <h4>Pagos Seguros</h4>
+                        <p>Múltiples métodos de pago</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carrusel Principal -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div id="carouselWithCaptions" class="carousel carousel-dark slide mx-0" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./public/carouselFig/img1.png" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Slide 1">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h5 class="py-2 bg-opacity-75 text-white bg-dark rounded">Descubre los mejores productos en SimplyDeals</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./public/carouselFig/img2.png" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Slide 2">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <div class="py-1 bg-dark bg-opacity-75 text-white rounded">
+                                    <h5>Entregamos tus pedidos a la puerta de tu casa</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./public/carouselFig/img3.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Slide 3">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <div class="py-2 bg-opacity-75 text-white bg-dark rounded">
+                                    <h5>Compra con seguridad y confianza</h5>
+                                    Encriptamos tu información con la mejor tecnología
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./public/carouselFig/img4.png" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Slide 4">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h5>Se parte de SimplyDeals <span class="counter" data-target="8923.12">$0</span></h5>
+                                <p>conviertete en vendedor y empieza a generar ingresos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselWithCaptions" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon rounded-circle bg-black bg-opacity-50 p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>        
+                    </a>
+                    <a class="carousel-control-next" href="#carouselWithCaptions" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon rounded-circle bg-black bg-opacity-50 p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Nuestra Propuesta</h3>
+                        <p class="card-text">
+                            En SimplyDeals nos comprometemos a ofrecerte:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Los mejores precios del mercado</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Productos de alta calidad</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Envíos rápidos y seguros</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Atención personalizada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- Quienes Somos -->
+      <div class="about-us py-5 bg-light">
+          <div class="container">
+              <h2 class="text-center mb-5">¿Quiénes Somos?</h2>
+              <div class="row g-4 text-center">
+                  <div class="col-md-6 ">
+                      <div class="about-card bg-white p-4 rounded shadow h-100">
+                          <h3 class="mb-4">Simply Deals</h3>
+                          <p class="mb-4">
+                            Simply Deals, es una plataforma eCommerce donde las personas podrán vender sus productos, explorar productos tecnológicos, artesanías, muebles 
+                            entre mucho de los productos o incluso hasta productos de la casa como despensas, productos alimenticios, detergentes y lo mejor que incluirá 
+                            un servicio delivery donde facilitará el tiempo del cliente con una interfaz y 
+                            experiencia del usuario adaptada para el uso de todas las personas.
+                        </p>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6">
+                      <div class="about-card bg-white p-4 rounded shadow h-100">
+                          <h4 class="mb-3">Objetivo del proyecto</h4>
+                          <p class="mb-4">El objetivo del proyecto es poder ofrecer a los clientes un servicio que pueden utilizar día a día sin tener que ir a un local de tiendas postales donde el único objetivo es retirar un paquete, pero con Simply Deals tu podrás navegar, elegir el producto que deseas, pagar con tarjeta de crédito, visa, yappy. Con el fin de ofrecer comodidad al usuario con el servicio de delivery, pero también para clientes que quieran comprar otros productos que no están disponibles en el país y quiera recibirlo a la semana, esta plataforma eCommerce considera hacer alianzas con otras empresas que ofrezcan productos fuera del país para traerlos.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 mx-auto">
+                      <div class="about-card bg-white p-4 rounded shadow h-100">
+                          <h4 class="mb-3">Nuestro público dirigido</h4>
+                          <ul class="list-unstyled text-start">
+                              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Artesanos</li>
+                              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Mayoristas</li>
+                              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Estudiantes que tienen un negocio en proceso</li>
+                              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>A todo el público que necesite un servicio compra y venta</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Productos -->
+            <div class="products py-5">
+                <div class="container">
+                    <h2 class="text-center mb-5">Nuestros Productos</h2>
+                    <div class="row g-4">
+                        <div class="col-md-8">
+                            <div class="product-card bg-white p-4 rounded shadow h-100">
+                                <h3 class="text-center mb-4">Descubre las últimas tecnologías de productos</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="/public/catalogs/macbook.gif" alt="Laptops" class="img-fluid mb-4 rounded" style="width: 100%; height: 200px; object-fit: contain;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4 class="mb-3">Laptops y Computadoras</h4>
+                                        <p class="text-muted">Encuentra las mejores laptops y computadoras de última generación, perfectas para trabajo, estudio o entretenimiento.</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <h4 class="mb-3">Smartphones y Tablets</h4>
+                                        <p class="text-muted">Explora nuestra selección de dispositivos móviles con las características más avanzadas del mercado.</p>
+                                    </div>
+                                    <div class="col-md-6 rounded">
+                                        <img src="/public/catalogs/phone.png" alt="Smartphones" class="img-fluid mb-4 rounded" style="width: 100%; height: 280px; object-fit: contain;">
+                                    </div>                                
+                                </div>
+                                <div class="mt-4">
+                                    <h4 class="mb-3">Tecnología de Vanguardia</h4>
+                                    <p class="text-muted">Sumérgete en el mundo de la innovación tecnológica con nuestra amplia gama de productos. Desde potentes laptops hasta smartphones de última generación, ofrecemos dispositivos que combinan rendimiento excepcional, diseño elegante y tecnología de punta para satisfacer todas tus necesidades digitales.</p>
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-card bg-white p-4 rounded shadow mb-4">
+                                <img src="/public/catalogs/food.png" alt="Artesanías" class="img-fluid mb-4 rounded" style="height: 200px; object-fit: cover; width: 100%;">
+                                <h4 class="mb-3">Alimentos</h4>
+                                <p class="text-muted">Descubre una amplia variedad de alimentos frescos y preparados para tu día a día</p>
+                            </div>
+                            <div class="product-card bg-white p-4 rounded shadow">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="/public/catalogs/c1.png" alt="Moda" class="img-fluid rounded" style="height: 100px; object-fit: cover; width: 100%;">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/public/catalogs/c2.png" alt="Moda" class="img-fluid rounded" style="height: 100px; object-fit: cover; width: 100%;">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/public/catalogs/c3.png" alt="Moda" class="img-fluid rounded" style="height: 100px; object-fit: cover; width: 100%;">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="/public/catalogs/c4.png" alt="Moda" class="img-fluid rounded" style="height: 100px; object-fit: cover; width: 100%;">
+                                    </div>
+                                </div>
+                                <h4 class="mb-3 mt-3">Moda</h4>
+                                <p class="text-muted">Explora las últimas tendencias en ropa, calzado y accesorios para todos los estilos y ocasiones.</p>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
